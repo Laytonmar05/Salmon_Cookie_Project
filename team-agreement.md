@@ -6,9 +6,14 @@
 <p>We will split up the work between the two of us. We will let eachother know when we have finished something and have started something. We will manage work by doing small parts at once and building up till the first project is done.</p> 
 <h1>Git Process</h1>
 <p>1. We will not accept/ allow our own pull requests. Our partner will do the others pr. 
+
 2. Always do a pull everyday to ensure you are caught up.
-3.Always acp, after you are done
+
+3.Always acp, after you are done.
+
 4. Tell partner when you make a new branch.
-5. At the end of the project, we will put all our code in the main branch.</p>
+
+5. At the end of the project, we will put all our code in the main branch.
+</p>
 <h1>Extra Information</h1>
 <p>We will work on a little bit each day, unless we are busy and have no time. If we need to get anything done we can work on the weekend but we will mainly just work on the week days. If we need to meet in person, we can talk and figure out the best time. When we are stuck we will take a break.</p>
