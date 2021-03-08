@@ -26,9 +26,7 @@ var seattle = {
       this.calcCookiesEachHour();
       // TODO:  access the seattle store HTML list by it's ID
       // and assign it to the unorderedList variable below
-      var unorderedList;
-      unorderedList = seattle;
-      document.querySelector('#seattle').textContent = seattle.calcCookiesEachHour;
+      var unorderedList = document.querySelector('seattle');
       for (var i = 0; i < hours.length; i++) {
         var listItem = document.createElement('li');
         listItem.textContent = hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies';
