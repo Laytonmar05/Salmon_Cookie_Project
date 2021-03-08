@@ -40,3 +40,88 @@ var seattle = {
     }
   };
 
+
+// TODO:  copy the object data from above and paste it 4 times below, each time representing a new city:  tokyo, dubai, paris, lima
+// the minCustomersPerHour, maxCustomersPerHour, avgCookiesPerSale should all have different sales counts
+// you may make these counts up and will also need to update where you "select" or "access" your HTML for each store
+
+var tokyo = {
+  locationName: 'tokyo',
+  minCustomersPerHour: 23,
+  maxCustomersPerHour: 65,
+  avgCookiesPerSale: 6.3,
+  customersEachHour: [],
+  cookiesEachHour: [],
+  totalDailyCookies: 0,
+  calcCustomersEachHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
+    }
+  },
+  calcCookiesEachHour: function () {
+    this.calcCustomersEachHour();
+  };
+
+var dubai = {
+  locationName: 'dubai',
+  minCustomersPerHour: 20,
+  maxCustomersPerHour: 72,
+  avgCookiesPerSale: 5.4,
+  customersEachHour: [],
+  cookiesEachHour: [],
+  totalDailyCookies: 0,
+  calcCustomersEachHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
+    }
+  },
+  calcCookiesEachHour: function () {
+    this.calcCustomersEachHour();
+  };
+
+var paris = {
+  locationName: 'paris',
+  minCustomersPerHour: 15,
+  maxCustomersPerHour: 100,
+  avgCookiesPerSale: 4.2,
+  customersEachHour: [],
+  cookiesEachHour: [],
+  totalDailyCookies: 0,
+  calcCustomersEachHour: function () {
+    for (var i = 0; i < hours.length; i++) {
+      this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
+    }
+  },
+  calcCookiesEachHour: function () {
+    this.calcCustomersEachHour();
+  };
+
+var lima = {
+    locationName: 'lima',
+    minCustomersPerHour: 22,
+    maxCustomersPerHour: 50,
+    avgCookiesPerSale: 5.1,
+    customersEachHour: [],
+    cookiesEachHour: [],
+    totalDailyCookies: 0,
+    calcCustomersEachHour: function () {
+      for (var i = 0; i < hours.length; i++) {
+        this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
+      }
+    },
+    calcCookiesEachHour: function () {
+      this.calcCustomersEachHour(); };
+
+function random(min, max) {
+  // TODO: "floor" this random number generator
+  return Math.random() * (max - min + 1) + min;
+}
+
+// TODO: list all shop objects in an array
+var allShops = [];
+
+(function renderAllShops() {
+  for (var i = 0; i < allShops.length; i++) {
+    allShops[i].render();
+  }
+})()
