@@ -45,7 +45,7 @@ var seattle = {
 // the minCustomersPerHour, maxCustomersPerHour, avgCookiesPerSale should all have different sales counts
 // you may make these counts up and will also need to update where you "select" or "access" your HTML for each store
 
-var tokyo = {
+let tokyo = {
   locationName: 'tokyo',
   minCustomersPerHour: 23,
   maxCustomersPerHour: 65,
@@ -53,16 +53,17 @@ var tokyo = {
   customersEachHour: [],
   cookiesEachHour: [],
   totalDailyCookies: 0,
-  calcCustomersEachHour: function () {
+};
+ function calcCustomersEachHour () {
     for (var i = 0; i < hours.length; i++) {
       this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
     }
-  },
-  calcCookiesEachHour: function () {
+  };
+ function calcCookiesEachHour () {
     this.calcCustomersEachHour();
   };
 
-var dubai = {
+let dubai = {
   locationName: 'dubai',
   minCustomersPerHour: 20,
   maxCustomersPerHour: 72,
@@ -70,16 +71,17 @@ var dubai = {
   customersEachHour: [],
   cookiesEachHour: [],
   totalDailyCookies: 0,
-  calcCustomersEachHour: function () {
+};
+function   calcCustomersEachHour() {
     for (var i = 0; i < hours.length; i++) {
       this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
     }
-  },
-  calcCookiesEachHour: function () {
+  };
+function   calcCookiesEachHour() {
     this.calcCustomersEachHour();
   };
 
-var paris = {
+let paris = {
   locationName: 'paris',
   minCustomersPerHour: 15,
   maxCustomersPerHour: 100,
@@ -87,16 +89,17 @@ var paris = {
   customersEachHour: [],
   cookiesEachHour: [],
   totalDailyCookies: 0,
-  calcCustomersEachHour: function () {
+};
+function calcCustomersEachHour() {
     for (var i = 0; i < hours.length; i++) {
       this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
     }
-  },
-  calcCookiesEachHour: function () {
+  };
+function calcCookiesEachHour() {
     this.calcCustomersEachHour();
   };
 
-var lima = {
+let lima = {
     locationName: 'lima',
     minCustomersPerHour: 22,
     maxCustomersPerHour: 50,
@@ -104,17 +107,18 @@ var lima = {
     customersEachHour: [],
     cookiesEachHour: [],
     totalDailyCookies: 0,
-    calcCustomersEachHour: function () {
+};
+    function calcCustomersEachHour() {
       for (var i = 0; i < hours.length; i++) {
         this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
       }
-    },
-    calcCookiesEachHour: function () {
+    };
+  function calcCookiesEachHour() {
       this.calcCustomersEachHour(); };
 
 function random(min, max) {
   // TODO: "floor" this random number generator
-  return Math.random() * (max - min + 1) + min;
+  return Math.floor(Math.random()) * (max - min + 1) + min;
 }
 
 // TODO: list all shop objects in an array
