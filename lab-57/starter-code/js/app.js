@@ -120,7 +120,7 @@ function random(min, max) {
 }
 
 // TODO: list all shop objects in an array
-var allShops = [];
+var allShops = ['salmon shirts', 'cookies', 'stickers'];
 
 (function renderAllShops() {
   for (var i = 0; i < allShops.length; i++) {
