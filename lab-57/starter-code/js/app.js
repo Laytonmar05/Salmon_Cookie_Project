@@ -38,7 +38,7 @@ var seattle = {
     }
   };
 
-
+seattle.render();
 // TODO:  copy the object data from above and paste it 4 times below, each time representing a new city:  tokyo, dubai, paris, lima
 // the minCustomersPerHour, maxCustomersPerHour, avgCookiesPerSale should all have different sales counts
 // you may make these counts up and will also need to update where you "select" or "access" your HTML for each store
@@ -60,7 +60,10 @@ let tokyo = {
  function calcCookiesEachHour () {
     this.calcCustomersEachHour();
   };
-
+  render () 
+   var unorderedList = document.querySelector('tokyo');
+  
+  tokyo.render();
 let dubai = {
   locationName: 'dubai',
   minCustomersPerHour: 20,
@@ -78,7 +81,9 @@ function   calcCustomersEachHour() {
 function   calcCookiesEachHour() {
     this.calcCustomersEachHour();
   };
-
+render ()
+var unorderedList = document.querySelector('dubai');
+dubai.render();
 let paris = {
   locationName: 'paris',
   minCustomersPerHour: 15,
@@ -108,15 +113,23 @@ let lima = {
 };
     function calcCustomersEachHour() {
       for (var i = 0; i < hours.length; i++) {
-        this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
+        this.customersEachHour.push(random(this.maxCustomersPerHour, this.maxCustomersPerHour));
       }
     };
   function calcCookiesEachHour() {
       this.calcCustomersEachHour(); };
+      render ()
+      var unorderedList = document.querySelector('lima');
+      lima.render();
 
+      seattle.render();
+      tokyo.render();
+      dubai.render();
+      lima.render();
+      paris.render();
 function random(min, max) {
   // TODO: "floor" this random number generator
-  return Math.floor(Math.random()) * (max - min + 1) + min;
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 // TODO: list all shop objects in an array
