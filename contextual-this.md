@@ -1,0 +1,3 @@
+<h1>This Command</h1>
+<p>The this command is a way for helping a function to run and show up on the screen or console. It is also a word that goes back to or refers to its object. This was the practice in the Salmon Cookie Project. It is used in js and lab 59 because it allows you to run and call the function anywhere on the document and not just in the function. 
+An example of the this command is this.calcCustomersEachHour. In the context of the Salmon Cookie Project, this is used but can be changed. You can do dubai. customersEachHour or this.CustomersEachHour. They do the same thing. </p>
