@@ -217,3 +217,28 @@ for (let i=0; i < myArray.length; i++) {
  };
 })();
  
+
+
+
+
+
+
+
+
+
+//this is the code for lab 
+
+calcCustomersEachHour: function() {
+  for (var i = 0; i < hours.length; i++)
+  this.customersEachHour.push(random (this.minCustomersPerHour, this.maxCustomersPerHour));
+};
+calcCookiesEachHour: function() {
+  this.calcCustomersEachHour;
+  for (var i = 0; i < hours.length; i++) 
+    var oneHour = Math.ceil(this.customersEachHour[i] * this.avgCookiesPerSale);
+    this.cookiesEachHour.push(oneHour);
+    this.totalDailyCookies += oneHour;
+}
+
+//I think that (this) is a way that a function is called and ran. So this.calCustomersEachHour would run that function. 
+//It helps in js because it allows you to run something without typing all your lines fo code out. 
